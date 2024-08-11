@@ -14,3 +14,6 @@ when@test:
         test: true
         session:
             storage_factory_id: session.storage.factory.mock_file
+    liip_test_fixtures:
+        cache_db:
+            sqlite: liip_test_fixtures.services_database_backup.sqlite
