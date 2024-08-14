@@ -1,5 +1,311 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>HomeController</h1>
+
+    {% include 'partials/navigation/navbar.html.twig' %}
+
+    <section class="section landingSection">
+        <div class="landingSection-inner">
+
+            <div class="landingSection-container">
+                <div class="landingSection-content">
+                    <h1>Lorem ispum dolor qui amet estam
+                        <typing-item strings='["Lorem", "Ipsum", "Dolor", "Sit"]'></typing-item>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur consequuntur
+                        cumque cupiditate dolor doloribus dolorum esse est eveniet incidunt inventore magnam nemo neque
+                        officiis placeat possimus provident quod, repellendus.</p>
+                    <div class="separator-1">
+                        <p>
+                            <a href="#" class="btn btn-primary">Nous contacter</a>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-phantom">Foire aux questions</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="landingSection-image">
+                    <img src="{{ asset('images/landingPage.avif') }}" typeof="avif" alt="Image tirée d'Unsplash"/>
+                </div>
+            </div>
+
+            <div class="wave">
+                <img src="{{ asset('images/svg/bottom-to-top-wave.svg') }}" alt="Image d'une vague verte">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section cardsSection">
+        <div class="cardsSection-inner">
+
+            <div class="cardsSection-container">
+                <div class="cardsSection-item">
+                    <i class="fa fa-house"></i>
+                    <h6>Lorem ispum dolor sit amet</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem culpa debitis deserunt
+                        earum facilis id ipsum laudantium non quam!</p>
+                    <a href="#" class="btn btn-sm btn-white">En savoir plus <i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="cardsSection-item">
+                    <i class="fa fa-map"></i>
+                    <h6>Lorem ispum dolor sit amet</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At odit placeat qui rem, repellat
+                        repudiandae similique vitae. Animi atque.</p>
+                    <a href="#" class="btn btn-sm btn-white">En savoir plus <i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="cardsSection-item">
+                    <i class="fa fa-laptop"></i>
+                    <h6>Lorem ispum dolor sit amet</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate dicta distinctio ea et
+                        impedit ipsum laborum minus molestias.</p>
+                    <a href="#" class="btn btn-sm btn-white">En savoir plus <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="wave">
+                <img src="{{ asset('images/svg/bottom-to-top-wave.svg') }}" alt="Image d'une vague verte">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section offersSection">
+        <div class="offersSection-inner">
+
+            <h2 class="main-title">
+                Nos Offres les plus populaires
+            </h2>
+
+            <div class="offersSection-container">
+
+                <div class="offersSection-item">
+                    <img src="{{ asset('images/router.avif') }}" alt="">
+                    <h6>Routeurs</h6>
+                    <div class="separator-1">
+                        <p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-phantom">Configurer</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offersSection-item">
+                    <img src="{{ asset('images/server.avif') }}" alt="">
+                    <h6>Serveurs</h6>
+                    <div class="separator-1">
+                        <p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-phantom">Configurer</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offersSection-item">
+                    <img src="{{ asset('images/laptop.avif') }}" alt="">
+                    <h6>Ordinateurs</h6>
+                    <div class="separator-1">
+                        <p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-phantom">Configurer</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offersSection-item">
+                    <img src="{{ asset('images/screen.avif') }}" alt="">
+                    <h6>Écrans</h6>
+                    <div class="separator-1">
+                        <p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-phantom">Configurer</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section productsSection">
+        <div class="productsSection-inner">
+
+            <h2 class="main-title">
+                Nos Produits les plus populaires
+            </h2>
+
+            <div class="productsSection-container">
+
+                <div class="productsSection-item">
+                    <img src="{{ asset('images/router.avif') }}" alt="">
+                    <h6>Routeurs</h6>
+                    <ul>
+                        <li>
+                            Lorem: <span>80%</span>
+                        </li>
+                        <li>
+                            Lorem ipsum: <span>800mo</span>
+                        </li>
+                        <li>
+                            Lorem: <span>1to</span>
+                        </li>
+                        <li>
+                            Lorem ipsum: <span>4 lorem</span>
+                        </li>
+                    </ul>
+                    <div class="separator">
+                        <a href="#" class="btn btn-primary">Commander <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+
+                <div class="productsSection-item">
+                    <img src="{{ asset('images/router.avif') }}" alt="">
+                    <h6>Routeurs</h6>
+                    <ul>
+                        <li>
+                            Lorem: <span>80%</span>
+                        </li>
+                        <li>
+                            Lorem ipsum: <span>800mo</span>
+                        </li>
+                        <li>
+                            Lorem: <span>1to</span>
+                        </li>
+                        <li>
+                            Lorem ipsum: <span>4 lorem</span>
+                        </li>
+                    </ul>
+                    <div class="separator">
+                        <a href="#" class="btn btn-primary">Commander <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+
+                <div class="productsSection-item">
+                    <img src="{{ asset('images/router.avif') }}" alt="">
+                    <h6>Routeurs</h6>
+                    <ul>
+                        <li>
+                            Lorem: <span>80%</span>
+                        </li>
+                        <li>
+                            Lorem ipsum: <span>800mo</span>
+                        </li>
+                        <li>
+                            Lorem: <span>1to</span>
+                        </li>
+                        <li>
+                            Lorem ipsum: <span>4 lorem</span>
+                        </li>
+                    </ul>
+                    <div class="separator">
+                        <a href="#" class="btn btn-primary">Commander <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section aboutSection">
+        <div class="aboutSection-inner">
+
+            <div class="aboutSection-item">
+                <div class="aboutSection-content">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, magnam.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus dolores eos ex iste
+                        itaque iure laboriosam molestias natus nesciunt quidem quos reiciendis repellendus repudiandae
+                        sint temporibus tenetur totam, unde.</p>
+                    <a href="" class="btn btn-primary btn-lg">FAQ <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="aboutSection-image">
+                    <img src="{{ asset('images/aboutSection1.avif') }}" alt="About Section1 Image">
+                </div>
+            </div>
+            <div class="aboutSection-item reverse">
+                <div class="aboutSection-content">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, magnam.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus dolores eos ex iste
+                        itaque iure laboriosam molestias natus nesciunt quidem quos reiciendis repellendus repudiandae
+                        sint temporibus tenetur totam, unde.</p>
+                    <a href="" class="btn btn-primary btn-lg">Nous contacter <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="aboutSection-image">
+                    <img src="{{ asset('images/aboutSection2.avif') }}" alt="About Section2 Image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footerSection">
+        <h6>Buy<span>MyServ</span></h6>
+        <div class="footerSection-inner">
+            <ul class="footerSection-links">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-house"></i>
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-tag"></i>
+                        Nos Offres
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-box"></i>
+                        Nos Produits
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        À Propos de nous
+                    </a>
+                </li>
+            </ul>
+            <ul class="footerSection-terms">
+                <li>
+                    <a href="#">CGU</a>
+                </li>
+                <li>
+                    <a href="#">CGC</a>
+                </li>
+                <li>
+                    <a href="#">CGV</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Mentions légales
+                    </a>
+                </li>
+            </ul>
+            <ul class="footerSection-social">
+                <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
 {% endblock %}
