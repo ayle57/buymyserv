@@ -1,0 +1,131 @@
+
+body {
+  font: {
+    size: $df_font_size;
+    family: $df_font_family, sans-serif;
+    weight: $df_font_weight;
+    style: $df_font_style;
+  };
+  text: {
+    decoration: $df_text_decoration;
+    transform: $df_text_transform;
+  };
+  line-height: $df_line_height;
+
+  background-color: $main_white;
+  color: $dark_grayish_blue;
+}
+
+/* -------------------- Base Styles -------------------- *\
+\* -------------------- Base Styles -------------------- */
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.7em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.1em;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $dark_grayish_blue;
+  transition: color $df_transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $dark_green;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: $df_border_radius;
+  font-family: $df_font_family, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform $df_transition;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+
+  &.btn-sm {
+    padding: 5px 10px;
+  }
+
+  &.btn-lg {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+  }
+
+  &.btn-primary {
+    border-color: $dark_green;
+    background: $dark_green;
+    color: $main_white;
+
+    &.btn-phantom {
+      background: inherit;
+      border: 2px solid $dark_green;
+      color: $dark_green;
+    }
+  }
+
+  &.btn-danger {
+    border-color: $red_danger;
+    background: $red_danger;
+    color: $main_white;
+  }
+
+  &.btn-warning {
+    border-color: $orange_warning;
+    background: $orange_warning;
+    color: $main_white;
+  }
+
+  &.btn-success {
+    border-color: $green_success;
+    background: $green_success;
+    color: $main_white;
+  }
+
+  &.btn-info {
+    border-color: $blue_info;
+    background: $blue_info;
+    color: $main_white;
+  }
+}
+
+i {
+  margin-right: 5px;
+}
