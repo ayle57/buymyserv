@@ -34,6 +34,12 @@ symfony serve -d
 pnpm run dev-server
 ```
 
+or 
+
+```bash
+php -S localhost:8080
+npm run dev-server
+```
 
 ## Table of contents
 
