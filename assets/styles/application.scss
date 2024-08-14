@@ -6,8 +6,18 @@
 @import 'Base/_normalize';
 
 // -------------------- Layout Files --------------------
+@import 'Layout/l-navbar';
+@import 'Layout/l-landingSection';
+@import 'Layout/l-cardsSection';
+@import 'Layout/l-aboutSection';
+@import 'Layout/l-offersSection';
+@import 'Layout/l-productsSection';
+@import 'Layout/l-footerSection';
 
 // -------------------- Module Files --------------------
+@import 'Module/m-dropdown';
+@import 'Module/m-separator';
+@import 'Module/m-mainTitle';
 
 // -------------------- State Files --------------------
 
