@@ -1,0 +1,41 @@
+li.dropdown-link {
+  position: relative;
+  &.open {
+    a {
+      color: $dark_green;
+    }
+  }
+}
+
+ul.dropdown {
+  border-bottom-left-radius: $df_border_radius;
+  border-bottom-right-radius: $df_border_radius;
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 10px 15px;
+
+  z-index: -999;
+
+  opacity: 0;
+  transform: translateY(-100%) translateX(calc(-50% + 60px));
+
+  top: 51px;
+  width: 120px;
+
+  -webkit-box-shadow: 0 10px 20px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px 5px rgba(0,0,0,0.05);
+
+  background: #ffffff;
+
+  transition: all $df_transition;
+
+  &.open {
+    transform: translateY(0)  translateX(calc(-50% + 60px));
+    opacity: 1;
+  }
+
+  li {
+    line-height: 2;
+  }
+}

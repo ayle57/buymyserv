@@ -1,0 +1,8 @@
+
+@for $i from 1 through 10 {
+  .separator-#{$i} {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 0 #{$i * 0.5}rem;
+  }
+}
