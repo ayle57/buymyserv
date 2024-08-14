@@ -48,6 +48,7 @@ npm run dev-server
 - [Project structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
+- [Styles](#styles)
 - [Authors](#authors)
 - [Acknowledgements](#acknowledgements)
 - [Changelog](#changelog)
@@ -96,6 +97,15 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Join Us
+
+## Styles
+
+Arrière-plan principal : #F4F0E4
+Texte principal : #022F40
+Texte secondaire ou accents subtils : #0B6B69
+Boutons/CTA (Call to Action) : #D94D36
+Liens/hover : #91B5F1
+Bordures/Diviseurs : #022F40
 
 ## Authors
 - Théo | Newlance (pro_theo)
