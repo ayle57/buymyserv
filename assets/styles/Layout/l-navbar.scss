@@ -1,0 +1,52 @@
+
+div.navbar-fake {
+  height: 51px;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  background: #fff;
+
+  z-index: 1000;
+
+  padding: 10px 5rem;
+  -webkit-box-shadow: 0 10px 20px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px 5px rgba(0,0,0,0.05);
+
+  div.navbar-brand {
+    flex: 0 0 30%;
+    max-width: 30%;
+    a {
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: .2px;
+      transition: $df_transition;
+
+      &:hover span {
+        color: $medium_orange;
+      }
+
+      span {
+        transition: $df_transition;
+        color: $dark_green;
+      }
+    }
+  }
+
+  ul.navbar-links {
+    flex: 0 0 70%;
+    max-width: 70%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

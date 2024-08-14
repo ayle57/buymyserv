@@ -1,0 +1,51 @@
+section.section.landingSection div.landingSection-inner {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  $wave_height: 10vh;
+
+  div.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(6px);
+  }
+
+  div.landingSection-container {
+    transform: translateY(-$wave_height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    gap: 0 20px;
+
+    div.landingSection-content {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    div.landingSection-image {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $df_border_radius;
+      }
+    }
+  }
+}

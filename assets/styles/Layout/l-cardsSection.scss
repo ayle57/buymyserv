@@ -1,0 +1,43 @@
+
+$wave_height: 10vh;
+
+section.section.cardsSection div.cardsSection-inner {
+  position: relative;
+  margin-bottom: $wave_height + 15vh;
+
+  div.wave {
+    position: absolute;
+    bottom: 0;
+    height: $wave_height;
+    width: 100%;
+    transform: rotate(-180deg) translateY(-26vh);
+  }
+
+  div.cardsSection-container {
+    padding: 15vh 40px;
+    background: $dark_green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 30px;
+
+    div.cardsSection-item {
+      text-align: center;
+      > i {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      h6 {
+        color: $main_white;
+      }
+      p {
+        margin-top: 10px;
+        color: $dark_white;
+      }
+      a.btn-white {
+        background: $main_white;
+        margin-top: 10px;
+      }
+    }
+  }
+}
