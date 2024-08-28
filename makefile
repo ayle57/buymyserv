@@ -11,3 +11,9 @@ pgsql:
 
 vars:
 	symfony var:export
+
+phpunit:
+	./bin/phpunit
+
+phpstan:
+	vendor/bin/phpstan analyse

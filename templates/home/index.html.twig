@@ -1,9 +1,6 @@
-{% extends 'base.html.twig' %}
+{% extends "base.html.twig" %}
 
 {% block body %}
-
-    {% include 'partials/navigation/navbar.html.twig' %}
-
     <section class="section landingSection">
         <div class="landingSection-inner">
 
@@ -16,11 +13,22 @@
                         cumque cupiditate dolor doloribus dolorum esse est eveniet incidunt inventore magnam nemo neque
                         officiis placeat possimus provident quod, repellendus.</p>
                     <div class="separator-1">
+                        {% if app.user and 'ROLE_ADMIN' in app.user.getRoles() %}
+                            <p>
+                                <a href="{{ path('app_admin') }}" class="btn btn-primary"><i class="fa fa-user-lock"></i> Dashboard</a>
+                            </p>
+                        {% elseif app.user %}
+                            <p>
+                                <a href="#" class="btn btn-primary">Mon profil</a>
+                            </p>
+                        {% else %}
+                            <p>
+                                <a href="{{ path('app_login') }}" class="btn btn-primary">Se connecter</a>
+                            </p>
+                        {% endif %}
+
                         <p>
-                            <a href="#" class="btn btn-primary">Nous contacter</a>
-                        </p>
-                        <p>
-                            <a href="#" class="btn btn-primary btn-phantom">Foire aux questions</a>
+                            <a href="#" class="btn btn-primary btn-phantom">Nous contacter</a>
                         </p>
                     </div>
                 </div>
@@ -246,66 +254,6 @@
         </div>
     </section>
 
-    <footer class="footerSection">
-        <h6>Buy<span>MyServ</span></h6>
-        <div class="footerSection-inner">
-            <ul class="footerSection-links">
-                <li>
-                    <a href="#">
-                        <i class="fa fa-house"></i>
-                        Accueil
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-tag"></i>
-                        Nos Offres
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-box"></i>
-                        Nos Produits
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-user"></i>
-                        À Propos de nous
-                    </a>
-                </li>
-            </ul>
-            <ul class="footerSection-terms">
-                <li>
-                    <a href="#">CGU</a>
-                </li>
-                <li>
-                    <a href="#">CGC</a>
-                </li>
-                <li>
-                    <a href="#">CGV</a>
-                </li>
-                <li>
-                    <a href="#">
-                        Mentions légales
-                    </a>
-                </li>
-            </ul>
-            <ul class="footerSection-social">
-                <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-x"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-google"></i></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+    {% include 'partials/navigation/footer.html.twig' %}
 
 {% endblock %}

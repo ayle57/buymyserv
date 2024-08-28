@@ -57,6 +57,11 @@ npm run dev-server
 
 The project is structured in a monolithic way. The project is divided into two main parts: the symfony part and the reactJS part. The symfony part is responsible for the backend and the reactJS part is responsible for the frontend. The symfony part is located in the `src` directory and the reactJS part is located in the `assets` directory.
 - assets : contains the reactJS part of the project
+  - Module |
+  - State  |
+  - Theme  | SMACSS Structure
+  - Base   |
+  - Layout |
 - bin : contains the symfony binary
 - config : contains the configuration of the symfony project
 - docs : contains the documentation of the project

@@ -5,6 +5,9 @@ function DropdownMenu({title, icon, links}) {
     const [isOpen, setIsOpen] = React.useState(false);
     let parsedLinks = [];
 
+    // TODO: create a copy of infomaniak dropdown
+    // TODO: provide API for data
+
     const handleClick = () => {
         setIsOpen(!isOpen);
     }
@@ -17,7 +20,7 @@ function DropdownMenu({title, icon, links}) {
 
     return (
         <>
-            <li className={`dropdown-link ${isOpen ? 'open' : 'close'}`}>
+            <li className={`custom-dropdown-link ${isOpen ? 'open' : 'close'}`}>
                 <a href="#" onClick={handleClick}><i className={`fas ${icon}`}></i>{title} <i className="fas fa-angle-down"></i></a>
             </li>
             <ul className={`dropdown ${isOpen ? 'open' : 'close'}`}>

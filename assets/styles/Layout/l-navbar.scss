@@ -3,7 +3,7 @@ div.navbar-fake {
   height: 51px;
 }
 
-nav.navbar {
+nav.custom-navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ nav.navbar {
   -webkit-box-shadow: 0 10px 20px 5px rgba(0,0,0,0.05);
   box-shadow: 0 10px 20px 5px rgba(0,0,0,0.05);
 
-  div.navbar-brand {
+  div.custom-navbar-brand {
     flex: 0 0 30%;
     max-width: 30%;
     a {
@@ -41,7 +41,7 @@ nav.navbar {
     }
   }
 
-  ul.navbar-links {
+  ul.custom-navbar-links {
     flex: 0 0 70%;
     max-width: 70%;
 

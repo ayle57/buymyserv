@@ -1,5 +1,5 @@
 section.section.offersSection div.offersSection-inner {
-  margin: 20vh 0;
+  margin: 20vh 0 10vh;
 
   div.offersSection-container {
     display: grid;
@@ -15,7 +15,7 @@ section.section.offersSection div.offersSection-inner {
       background: $dark_white;
       border: 1px solid $dark_blue;
       border-radius: $df_border_radius;
-      padding: 5px;
+      padding: 5px 5px 10px;
 
       img {
         width: 100%;
@@ -24,7 +24,7 @@ section.section.offersSection div.offersSection-inner {
       }
 
       h6 {
-        margin: 10px 0 5px;
+        margin: 10px 0 20px;
         font-size: 1.4rem;
       }
 

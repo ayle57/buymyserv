@@ -1,52 +1,82 @@
 
 footer.footerSection {
-  background: $dark_green;
-  padding: 2.5vh 5rem 5vh;
+  position: relative;
+  margin-top: 20vh;
 
-  h6 {
-    padding: 0 5px;
+  div.wave {
     display: inline-block;
-    background: $main_white;
-    color: $dark_grayish_blue;
-    margin-bottom: 10px;
-
-    span {
-      color: $dark_green;
-    }
+    height: 5vh;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
   }
 
   div.footerSection-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    background: $dark_green;
+    padding: 2.5vh 5rem 5vh;
 
-    ul {
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
+    h6 {
+      padding: 0 5px;
+      display: inline-block;
+      background: $main_white;
+      color: $dark_grayish_blue;
+      margin-bottom: 10px;
 
-      li {
-        line-height: 2.5;
-
-        a {
-          color: $main_white;
-
-          &:hover {
-            color: $medium_orange;
-          }
-
-          i {
-            font-size: 20px;
-          }
-        }
+      span {
+        color: $dark_green;
       }
     }
 
-    ul:nth-child(2) {
-      text-align: center;
-    }
+    div.footerSection-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
 
-    ul:nth-child(3) {
-      text-align: right;
+      ul {
+        flex: 0 0 25%;
+        max-width: 25%;
+
+        &:nth-of-type(2) li {
+          text-align: left;
+        }
+
+        &:nth-of-type(3) li {
+          text-align: left;
+        }
+
+        &:last-child li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+        }
+
+        li {
+          line-height: 2.5;
+          color: $main_white;
+
+          a {
+            color: $main_white;
+
+            &:hover {
+              color: $medium_orange;
+            }
+
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      ul:nth-child(2) {
+        text-align: center;
+      }
+
+      ul:nth-child(3) {
+        text-align: right;
+      }
     }
   }
 }

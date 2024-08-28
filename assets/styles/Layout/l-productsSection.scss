@@ -1,5 +1,5 @@
 section.section.productsSection div.productsSection-inner {
-  margin: 20vh 0 10vh;
+  margin: 10vh 0;
 
   div.productsSection-container {
     display: grid;
@@ -15,7 +15,7 @@ section.section.productsSection div.productsSection-inner {
       background: $dark_white;
       border: 1px solid $dark_blue;
       border-radius: $df_border_radius;
-      padding: 5px;
+      padding: 5px 5px 10px;
 
       img {
         width: 100%;
